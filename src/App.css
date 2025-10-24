@@ -1,0 +1,173 @@
+/* 🌸🌈 Thème doux et girly : dégradé rose-violet 🌈🌸 */
+body {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 💖 Carte principale */
+.todo-card {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(195, 130, 255, 0.3);
+  max-width: 550px;
+  width: 100%;
+  animation: fadeIn 0.8s ease;
+  transition: transform 0.3s ease;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ✨ Titre glamour */
+.title {
+  color: #b14ed6;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(255, 173, 230, 0.7);
+  margin-bottom: 20px;
+}
+
+/* 💅 Champ input */
+.input-style {
+  border: 2px solid #d97efc;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.input-style:focus {
+  border-color: #b14ed6;
+  box-shadow: 0 0 10px rgba(217, 126, 252, 0.6);
+}
+
+/* 🌸 Bouton principal (Ajouter) */
+.btn-pink {
+  background: linear-gradient(90deg, #ff85c1, #b47cff);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background: linear-gradient(90deg, #ff6fb5, #a563f7);
+  transform: scale(1.05);
+}
+
+/* 🌷 Éléments de la liste */
+.todo-item {
+  background: #fff;
+  border-radius: 10px;
+  border-left: 5px solid #d97efc;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(186, 130, 255, 0.15);
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  animation: slideIn 0.4s ease;
+}
+
+.todo-item:hover {
+  background: #f9f0ff;
+  transform: scale(1.02);
+}
+
+/* ✅ Tâches terminées */
+.done {
+  text-decoration: line-through;
+  background-color: #ffe0e6 !important;
+  border-left: 5px solid #ff5b5b;
+  color: #b44c4c;
+  transition: 0.3s;
+}
+
+/* 💫 Boutons d’action */
+.btn-outline-info {
+  color: #a04ef0;
+  border-color: #a04ef0;
+}
+
+.btn-outline-info:hover {
+  background-color: #a04ef0;
+  color: white;
+}
+
+.btn-outline-danger {
+  color: #e85d8a;
+  border-color: #e85d8a;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e85d8a;
+  color: white;
+}
+
+/* 🧹 Bouton "Tout effacer" */
+.clear-btn {
+  background: linear-gradient(90deg, #d97efc, #ff85c1);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 143, 200, 0.6);
+}
+
+/* 🌟 Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🎀 Style des inputs en mode édition */
+.list-group-item input[type="text"] {
+  border: 2px solid #c87cff;
+  border-radius: 8px;
+}
+
+.list-group-item input[type="text"]:focus {
+  border-color: #b14ed6;
+  box-shadow: 0 0 6px rgba(177, 78, 214, 0.5);
+}
+
+/* 🩷 Barre de défilement mignonne */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d97efc, #ff85c1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #c45aff, #ff66ad);
+}
